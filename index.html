@@ -1,12 +1,42 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>eaglercraft.Zero</title>
+    <title>Eaglercraft.Zero</title>
     <style>
-        body { margin: 0; background-color: black; color: white; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        body { 
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center; 
+            background-image: url('bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #d1fffa;
+            font-family: sans-serif;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        .loader {
+            border: 8px solid #333;
+            border-top: 8px solid #a832a8;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
-    <h1>Лаунчер запускається...</h1>
+    <div class="loader"></div>
+    <h1>Завантаження Eaglercraft.Zero...</h1>
+    <p>Портал в Енд відчиняється.</p>
 </body>
 </html>
